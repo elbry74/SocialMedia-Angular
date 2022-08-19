@@ -1,0 +1,14 @@
+<div id="nav-bar">
+  <div id="nav-bar-content">
+
+      <div id="nav-bar-left">
+          <div style="font-size: 1.6em;" class="nav-bar-items"><img src="../../../assets/logo.png"></div>
+      </div>
+
+      <div id="nav-bar-right">
+          <button *ngIf="!loggedIn()" (click)="onLoginClick()" mat-flat-button color="warn" class="nav-bar-items">Login</button>
+          <button *ngIf="loggedIn()" (click)="onLogoutClick()" mat-flat-button color="warn" class="nav-bar-items" >Logout</button>
+      </div>
+
+  </div>
+</div>
